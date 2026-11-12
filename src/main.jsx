@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {createRoot} from 'react-dom/client';
 import StylistChat from './StylistChat';
-import {ArrowUpRight, ArrowRight, Search, ShoppingBag, UserRound, Heart, Menu, X, Plus, Minus, ChevronDown} from 'lucide-react';
+import {ArrowUpRight, ArrowRight, Search, ShoppingBag, UserRound, Heart, Menu, X, Plus, Minus} from 'lucide-react';
 import './style.css';
 
 const products=[

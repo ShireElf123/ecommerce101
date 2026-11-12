@@ -106,3 +106,5 @@ nav button:hover::after{width:100%}
 .chat-input button:disabled{opacity:.35}
 .chat-note{display:flex;align-items:center;gap:6px;justify-content:center;font-size:8.5px;color:#a4927d;padding:0 12px 10px;letter-spacing:.02em}
 @media(max-width:800px){.stylist-fab{bottom:calc(78px + env(safe-area-inset-bottom));right:14px;height:52px;padding:0 16px}.chat-panel{left:12px;right:12px;width:auto;height:min(66vh,560px);bottom:calc(140px + env(safe-area-inset-bottom))}.chat-nudge{bottom:calc(140px + env(safe-area-inset-bottom));right:14px}}
+.reference-hero-copy button,.closing-banner button{color:#33251a}
+.eyebrow{color:#6f7558}.product-info p{color:#767b70}.gallery-note{color:#6f766a}.concept-note{color:#767d70}.chat-note{color:#8f8272}
