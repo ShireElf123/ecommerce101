@@ -75,7 +75,7 @@ function HomeProduct({p,money,openProduct,setSelected,add,favorites,toggleFavori
 function ProductGallery({product}) {
  const [zoom,setZoom]=useState(false),[view,setView]=useState(0);
  const shoeNumber=Number(product.img.match(/^shoe(\d+)\.webp$/)?.[1]);
- const images=[product.img,...(shoeNumber>=1&&shoeNumber<=14?[`shoe${shoeNumber}-alt.webp`]:[])];
+ const images=[product.img,...(shoeNumber>=1&&shoeNumber<=24?[`shoe${shoeNumber}-alt.webp`]:[])];
  useEffect(()=>{setZoom(false);setView(0)},[product.id]);
  return <div className="gallery"><div className={'gallery-stage '+(zoom?'is-zoomed':'')}><img src={'/images/'+images[view]} alt={`${product.name}, ${view===0?'side':'alternate'} view`}/><span className="gallery-index">MOVA / 0{view+1}</span><button className="gallery-zoom" aria-pressed={zoom} onClick={()=>setZoom(!zoom)}>{zoom?'− ZOOM OUT':'+ ZOOM IN'}</button></div><div className="gallery-caption"><span>THE DETAILS MAKE THE DIFFERENCE</span><span>0{view+1} / 0{images.length}</span></div>{images.length>1&&<div className="gallery-thumbs" aria-label="Product images">{images.map((image,i)=><button key={image} aria-label={`View ${i===0?'side':'alternate'} image`} aria-pressed={view===i} onClick={()=>{setView(i);setZoom(false)}}><img src={'/images/'+image} alt=""/></button>)}</div>}<p className="gallery-note">AI-generated concept images; alternate views may vary. Additional angles coming soon.</p></div>;
 }
