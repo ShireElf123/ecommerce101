@@ -136,3 +136,40 @@ button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-vis
 @media(max-width:800px){.home-product-actions button{font-size:10px;min-height:44px}.sizes button{min-width:44px;min-height:44px}.hero-controls button,.header-actions .icon,.mobile-menu{min-width:44px;min-height:44px}.movement-tabs button{font-size:10px;min-height:44px}.direction-links small{font-size:10px;line-height:1.3}.home-product p,.reference-heading p{font-size:13px}.mobile-product-bar{padding-bottom:max(12px,env(safe-area-inset-bottom))}}
 @media(max-width:420px){.direction-links{grid-template-columns:1fr}.direction-links button{border-right:0;border-bottom:1px solid #ded8ce;padding:13px 10px;min-height:54px}.direction-links button:last-child{border-bottom:0}.direction-links small{font-size:10px;letter-spacing:.06em}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Desktop typography: legible shopping controls without changing the editorial scale. */
+@media (min-width: 801px){
+  header{gap:clamp(24px,4vw,58px)}
+  header nav,.home-header nav{gap:clamp(16px,2vw,30px)}
+  header nav button,.home-header nav button{font-size:14px;letter-spacing:.01em;line-height:1.35}
+  .announcement,.mova-marquee>div{font-size:11px}
+  .section-index,.eyebrow,.campaign-kicker{font-size:12px}
+  .hero-description,.reference-heading p,.shop-title p,.movement-story p,.movement-copy p{font-size:15px;line-height:1.65}
+  .reference-categories p{font-size:16px;line-height:1.45}
+  .direction-links small,.movement-tabs button,.movement-product small,.home-product-meta span{font-size:12px}
+  .reference-hero-copy .hero-cta,.reference-categories button,.recommend-grid button,.home-product-actions button,.see-more,.movement-cta,.dark-btn,.light-btn,.text-link{font-size:12px}
+  .home-product p,.product-info p{font-size:14px;line-height:1.5}
+  .home-product-meta strong,.product-info strong,.product-info h3{font-size:14px}
+  .filters{flex-wrap:wrap;align-items:center}
+  .filters button,.colour-label select,.price-label select,.sort-label select{font-size:13px}
+  .colour-label,.price-label,.sort-label,.active-filters>span{font-size:11px}
+  .breadcrumbs,.breadcrumbs button,.shop-title>span,.gallery-index,.gallery-caption{font-size:11px}
+  .gallery-note,.detail-copy .concept-note,.detail-accordions p,.detail-suggestions span,.muted,.order-summary>p{font-size:13px;line-height:1.6;color:#666b60}
+  .detail-colour span,.size-label,.size-guide-link,.detail-save,.gallery-zoom,.cart-size,.remove-item{font-size:12px}
+  .detail-colour strong,.detail-accordions summary,.detail-suggestions strong,.cart-item-info p,.summary-item,.form-stack input,.form-stack textarea{font-size:14px}
+  .footer-top p,.footer-top span,.footer-top button:not(.footer-logo),.footer-signup input{font-size:13px}
+  .footer-top b,.footer-signup label,.footer-bottom,.footer-signup button{font-size:11px!important}
+}
+@media (min-width:801px) and (max-width:1100px){
+  header,.home-header{padding-left:3%;padding-right:3%;gap:20px}
+  header nav,.home-header nav{gap:15px}
+  header nav button,.home-header nav button{font-size:13px}
+  .header-actions{gap:12px}
+}
+/* Comfortable desktop reading and action sizes. */
+@media (min-width:801px){
+  .hero-description,.reference-heading p,.shop-title p,.movement-story p,.movement-copy p,.home-product p,.product-info p,.story-content p,.detail-copy>p,.guide-dialog p,.no-results p{font-size:16px;line-height:1.6}
+  .reference-hero-copy .hero-cta,.reference-categories button,.recommend-grid button,.home-product-actions button,.see-more,.movement-cta,.dark-btn,.light-btn,.text-link,.filters button,.gallery-zoom,.detail-save,.size-guide-link{font-size:13px;line-height:1.35}
+  .home-product-actions button,.filters button{min-height:44px}
+  .footer-top span,.footer-top button:not(.footer-logo),.footer-signup input{font-size:14px}
+}
